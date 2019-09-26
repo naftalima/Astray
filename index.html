@@ -124,7 +124,8 @@
                 scene.add(mazeMesh);
 
                 // Add the ground.
-                g = new THREE.PlaneGeometry(mazeDimension*10, mazeDimension*10, mazeDimension, mazeDimension);
+                // // g = new THREE.PlaneGeometry(mazeDimension*10, mazeDimension*10, mazeDimension, mazeDimension);
+                g = new THREE.PlaneGeometry(mazeDimension, mazeDimension) ;
                 planeTexture.wrapS = planeTexture.wrapT = THREE.RepeatWrapping;
                 planeTexture.repeat.set(mazeDimension*5, mazeDimension*5);
                 m = new THREE.MeshPhongMaterial({map:planeTexture});
